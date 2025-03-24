@@ -75,7 +75,7 @@
       <div id="wrap">
         <div id="text">
           <div id="code">
-            <font color="#0000FF"
+            <font color="#000"
               ><span class="say">Chào em yêu,</span><br />
               <span class="say"> </span><br />
               <span class="say">Em là người con gái anh yêu nhất :)</span><br />
@@ -97,7 +97,9 @@
               ><br />
               <span class="say"> </span><br />
               <span class="say"
-                ><span class="space"></span> -- Yêu em thật nhiều --</span
+                ><span class="space"></span> -- Yêu em
+                <font color="red">&hearts;</font> Hoài Thương
+                <font color="red">&hearts;</font> --</span
               >
             </font>
           </div>
@@ -112,6 +114,7 @@
           id="canvas"
           width="1100"
           height="680"
+          style="background: transparent !important"
         ></canvas>
       </div>
     </div>
@@ -288,7 +291,7 @@
             canvas
               .parent()
               .css("background", "url(" + tree.toDataURL("image/png") + ")");
-            canvas.css("background", "#ffe");
+            canvas.css("background", "transparent");
             $await(Jscex.Async.sleep(300));
             canvas.css("background", "none");
           })
